@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>All About Me</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background: #fceecf;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 800px;
+      background: #fff6e8;
+      margin: 0 auto;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 36px;
+      color: #f7941d;
+      margin-bottom: 30px;
+    }
+
+    .form-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      background: #fff9ec;
+      padding: 15px;
+      border-radius: 12px;
+      border: 2px solid #f3c989;
+    }
+
+    label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    input[type="text"], textarea {
+      padding: 10px;
+      border: 2px solid #f3c989;
+      border-radius: 10px;
+      background-color: #fff;
+      font-size: 16px;
+      resize: none;
+    }
+
+    textarea {
+      height: 60px;
+    }
+
+    .photo-section {
+      text-align: center;
+    }
+
+    .photo-section img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #f3c989;
+      object-fit: cover;
+      margin-top: 10px;
+    }
+
+    .color-circles {
+      display: flex;
+      gap: 10px;
+      margin-top: 5px;
+    }
+
+    .circle {
+      width: 30px;
+      height: 30px;
+      background-color: #eee;
+      border: 2px solid #ccc;
+      border-radius: 50%;
+    }
+
+    .full-width {
+      grid-column: span 2;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>All About Me</h1>
+    <div class="form-section">
+
+      <div class="form-group">
+        <label>My name</label>
+        <input type="text" placeholder="Enter your name" />
+      </div>
+
+      <div class="form-group">
+        <label>I am</label>
+        <input type="text" placeholder="Your age" /> years old
+      </div>
+
+      <div class="form-group photo-section">
+        <label>It's Me</label>
+        <img src="ly.png" alt="It's Me" />
+      </div>
+
+      <div class="form-group">
+        <label>My Favorite Color</label>
+        <div class="color-circles">
+          <div class="circle"></div>
+          <div class="circle"></div>
+          <div class="circle"></div>
+        </div>
+      </div>
+
+      <div class="form-group full-width">
+        <label>My Favorite Food</label>
+        <textarea placeholder="Enter your favorite food"></textarea>
+      </div>
+
+      <div class="form-group">
+        <label>Favorite Animal</label>
+        <input type="text" placeholder="Enter your favorite animal" />
+      </div>
+
+      <div class="form-group">
+        <label>My Goal This Year</label>
+        <textarea placeholder="Enter your goal"></textarea>
+      </div>
+
+      <div class="form-group full-width">
+        <label>Get to know me</label>
+        <textarea placeholder="Tell something about yourself"></textarea>
+      </div>
+
+    </div>
+  </div>
+</body>
+</html>
